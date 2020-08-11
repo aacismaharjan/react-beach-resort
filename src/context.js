@@ -30,8 +30,6 @@ class RoomProvider extends Component {
         order: "-fields.price",
       });
 
-      console.log(response, response.items);
-
       let rooms = this.formatData(response.items);
       let featuredRooms = rooms.filter((room) => room.featured === true);
 
